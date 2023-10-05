@@ -1,0 +1,66 @@
+*{
+    padding:0;
+    margin: 0;
+    text-decoration: none;
+}
+body{
+    background-color: rgb(206, 205, 205);
+    background-image: url(CHATBOT-DEVELOPMENT.jpg);
+    background-size: 100%;
+}
+/* Customize the scrollbar track */
+::-webkit-scrollbar {
+    width: 8px; /* Adjust the width as needed */
+}
+
+/* Customize the scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+    background-color: #888; /* Change the thumb color */
+    border-radius: 6px; /* Round the corners of the thumb */
+}
+
+.chatbot_area {
+    display: flex;
+    width: 30%; height: 500px;
+    flex-direction: column;
+    border:5px solid whitesmoke;
+    background-color: white; 
+    margin:0 auto;
+    margin-top: 5%;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.chatbot_area .messages {
+    overflow-y: scroll;
+    height:93%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+
+}
+.chatbot_area .inp{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.chatbot_area .inp .input_message {
+    height: 25px;width: 60%;
+    align-self: center;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.chatbot_area .inp .sent_box:hover .sent_img{
+    width: 25px;
+    transform: rotate(-20deg);
+}
+.chatbot_area .inp .sent_img{
+    width: 20px;
+}
+
